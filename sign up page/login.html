@@ -50,7 +50,7 @@
                 <div class="login-content">
                     <div class="form-item">
                         <label for="email">Enter Email</label>
-                        <input type="email" name="" id="" placeholder="example@email.com">
+                        <input type="email" name="" id="email" placeholder="example@email.com">
                     </div>
                     <div class="form-item">
                         <label for="password">Enter Password</span></label>
@@ -74,7 +74,7 @@
                         <!--<a href="#register" class="link-register">Sign Up</a>-->
                     </div>
     
-                    <button type="submit">LogIn</button>
+                    <button type="submit" onclick = "auth()">LogIn</button>
                 </div>
                 <div class="login-footer">
                     <a href="">
@@ -85,6 +85,22 @@
                     </a>
                 </div>
             </form>
+            <script>
+                function auth() {
+                    var email = document.getElementById('email').value;
+                    var password = document.getElementById('password').value;
+
+            if (email == 'example@gmail.com')
+            {
+                window.location.assign('dashboard.html');
+                alert('login successfully');
+            }
+            else {
+                alert('Invalid information');
+                return;
+            }
+                }
+            </script>
         </div>
         <div class="login-right">
             <img src="images/img3.jpg" alt="">
