@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracking Dashboard</title>
+    <link rel="stylesheet" href="finance.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>MYMONEY.</h2>
+            <nav class="nav">
+                <a href="#" class="nav-item active">Dashboard</a>
+                <a href="#" class="nav-item">Statistics</a>
+                <a href="#" class="nav-item">Chats</a>
+                <a href="#" class="nav-item">My wallet</a>
+                <a href="#" class="nav-item">Transfers</a>
+                <a href="#" class="nav-item">Settings</a>
+            </nav>
+            <div class="investment-card">
+                <h3>Smart investment</h3>
+                <p>We have developed a service for novice investors</p>
+                <button>More detailed</button>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Dashboard</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="profile">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar">
+                    <span>USER</span>
+                </div>
+            </header>
+            <section class="cards">
+                <h3>My cards</h3>
+                <div class="card-details">
+                    <div class="card-item">
+                        <div class="card-info blue-card">
+                            <span class="card-balance">$1,500</span>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <div class="card-info red-card">
+                            <span class="card-balance">$830</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="transactions">
+                <h3>Transactions</h3>
+                <ul>
+                    <li>
+                        <span>Apple Store</span>
+                        <span>-145 $</span>
+                    </li>
+                    <li>
+                        <span>Netflix</span>
+                        <span>-15 $</span>
+                    </li>
+                    <li>
+                        <span>Tinder</span>
+                        <span>-50 $</span>
+                    </li>
+                    <li>
+                        <span>Spotify</span>
+                        <span>-25 $</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="analysis">
+                <h3>Analysis</h3>
+                <canvas id="myChart" width="400" height="200"></canvas>
+            </section>
+            <section class="categories">
+                <div class="category-item">
+                    <span>Shops</span>
+                    <span>$432</span>
+                </div>
+                <div class="category-item">
+                    <span>Taxi</span>
+                    <span>$126</span>
+                </div>
+                <div class="category-item">
+                    <span>Music</span>
+                    <span>$25</span>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="finance.js"></script>
+</body>
+</html>

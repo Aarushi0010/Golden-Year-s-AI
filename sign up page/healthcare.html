@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Dashboard</title>
+    <link rel="stylesheet" href="healthcare.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>eCareMD</h2>
+        </div>
+        <ul class="nav">
+            <li class="active">Dashboard</li>
+            <li>Patients</li>
+            <li>Billing & Claims</li>
+            <li>Analytics</li>
+            <li>Call Scheduler</li>
+            <li>Message <span class="badge">8</span></li>
+            <li>Alerts <span class="badge">5</span></li>
+            <li>Task</li>
+            <li>Education</li>
+            <li>Library</li>
+            <li>Settings</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Dashboard</h1>
+            <div class="header-actions">
+                <button class="btn">+ New Patients</button>
+                <input type="month">
+            </div>
+        </header>
+        <section class="stats">
+            <div class="card">
+                <h3>Patient Enrolled</h3>
+                <p>550</p>
+                <span class="change">10% Since last month</span>
+            </div>
+            <div class="card">
+                <h3>Non-Complex</h3>
+                <p>500</p>
+                <span class="change">0% Since last month</span>
+            </div>
+            <div class="card">
+                <h3>Complex</h3>
+                <p>50</p>
+                <span class="change">0% Since last month</span>
+            </div>
+            <div class="card">
+                <h3>Compliance</h3>
+                <p>75%</p>
+                <span class="change">10% Since last month</span>
+            </div>
+            <div class="card">
+                <h3>Improvement</h3>
+                <p>84%</p>
+                <span class="change">2% Since last month</span>
+            </div>
+        </section>
+        <section class="details">
+            <div class="program">
+                <h2>Program</h2>
+                <div class="card">
+                    <h3>New Enrollments</h3>
+                    <p>200</p>
+                </div>
+                <div class="card">
+                    <h3>Initial Interview & Care Plan Assigned</h3>
+                    <p>180</p>
+                </div>
+                <!-- Add more program details as necessary -->
+            </div>
+            <div class="billing">
+                <h2>Billing</h2>
+                <div class="card">
+                    <h3>Total Revenue</h3>
+                    <p>$154,873</p>
+                </div>
+                <!-- Add more billing details as necessary -->
+            </div>
+        </section>
+        <section class="tasks">
+            <h2>Today's Tasks</h2>
+            <ul>
+                <li>Reach out to patient - Hanna Westervelt</li>
+                <li>Review Check-Ins - Cooper Franci</li>
+                <li>Assign new CGM devices - Jocelyn Vetros</li>
+                <!-- Add more tasks as necessary -->
+            </ul>
+        </section>
+        <section class="patients-list">
+            <h2>Patients List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Patient Name</th>
+                        <th>Age</th>
+                        <th>Conditions</th>
+                        <th>Enrolled Status</th>
+                        <th>Enrolled Date</th>
+                        <th>Program</th>
+                        <th>Provider</th>
+                        <th>Monthly Mins</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#P1234</td>
+                        <td>Alex Smith</td>
+                        <td>74</td>
+                        <td>Diabetes, Heart Failure</td>
+                        <td>Enrolled</td>
+                        <td>29-04-2022</td>
+                        <td>CCM, PCM</td>
+                        <td>Adalberto Hope</td>
+                        <td>130</td>
+                    </tr>
+                    <!-- Add more patient records as necessary -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="healthcare.js"></script>
+</body>
+</html>
